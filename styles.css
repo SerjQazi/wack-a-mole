@@ -117,3 +117,13 @@ footer {
     font-weight: lighter;
   }
 }
+
+
+@media (max-width: 450px) {
+  footer {
+    font-size: 0.9rem;
+    a {
+        font-size: 0.9rem;
+    }
+  }
+}
