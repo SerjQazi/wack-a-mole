@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bc798b24f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    
+</head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>wack-a-mole</h1>
+            </header>
+            <div class="gameContainer">
+                <div class="montyContainer">
+                    <h3 id="rest">Reset</h3>
+                    <img id="monty" class="monty" src="./images/montymole-idle1.png" alt=""
+                    onclick="restSize()"
+                    >
+                </div>
+                <img id="luigi" class="luigi" src="./images/luigi-wack1.png" alt=""
+                onmousedown=
+                    "document.getElementById('luigi').src='./images/luigi-wack2.png'; 
+                    document.getElementById('monty').src='./images/montymole-idle2.png';"
+    
+                onmouseup=
+                    "document.getElementById('luigi').src='./images/luigi-wack1.png'; 
+                    document.getElementById('monty').src='./images/montymole-idle1.png';"
+    
+                onclick="counter(), imgSize()"
+                >
+            </div>
+            
+
+            
+
+            <div>
+                <h2 class="hits">Hits: </h2>
+            </div>
+        </div>
+        <footer>
+      <p>
+        &copy; 2025 Serj. Built with
+        <i class="fa-brands fa-js" style="color: #000222"></i> JavaScript
+      </p>
+      <p class="mt-2">
+        <a
+          href="https://serjqazi.com/"
+          class="hover:text-white"
+          >Serj Qazi</a
+        >
+        ·
+        <a
+          href="mailto:sirajum.qazi@torontofilmschool.ca"
+          class="hover:text-white"
+          >Email</a
+        >
+        ·
+        <a
+          href="https://github.com/SerjQazi"
+          class="hover:text-white"
+          target="_blank"
+          >GitHub</a
+        >
+        ·
+        <a
+          href="https://www.linkedin.com/in/serjqazi/"
+          class="hover:text-white"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+    </body>
+</html>
